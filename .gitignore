@@ -1,0 +1,7 @@
+.vscode
+.history
+configs/config.json
+.DS_Store
+vendor/
+service_api
+*.csv
