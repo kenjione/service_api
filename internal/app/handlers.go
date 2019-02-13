@@ -8,7 +8,7 @@ import (
 )
 
 func (s *LocationServer) LocationHandler(c *gin.Context) {
-	ipAddress := c.Query("ip_address")
+	ipAddress := c.Param("ip")
 	lbytes, err := s.Importer.FindByIP(ipAddress)
 
 	if err != nil {
