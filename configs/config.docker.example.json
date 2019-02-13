@@ -1,0 +1,7 @@
+{
+  "ServerPort": ":3000",
+  "Database": "dockerdbname",
+  "DatabaseUser": "postgres",
+  "DatabasePassword": "",
+  "DatabaseAddr": "db:5432"
+}

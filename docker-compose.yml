@@ -1,0 +1,24 @@
+version: '3'
+services:
+  db:
+    image: 'postgres:10'
+    volumes:
+      - './data:/var/lib/postgresql/data'
+    env_file:
+      - .env
+    ports:
+      - '5433:5432'
+  app:
+    build:
+      context: .
+      args:
+        - 'SSH_PRIVATE_KEY=${SSH_PRIVATE_KEY}'
+    command: ["go", "run", "main.go"]
+    ports:
+      - 3000:3000
+    volumes:
+      - '.:/go/src/app'
+    depends_on:
+      - db
+    links:
+      - db

@@ -5,3 +5,4 @@ configs/config.json
 vendor/
 service_api
 *.csv
+data

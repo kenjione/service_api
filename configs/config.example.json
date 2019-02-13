@@ -1,6 +1,6 @@
 {
   "ServerPort": ":3000",
-  "DatabaseHost": "somehost",
-  "DatabaseUser": "someuser",
+  "DatabaseName": "dbname",
+  "DatabaseUser": "username",
   "DatabasePassword": ""
 }
