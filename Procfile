@@ -1,1 +1,1 @@
-web: service-api
+web: service_api
