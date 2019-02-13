@@ -6,3 +6,4 @@ vendor/
 service_api
 *.csv
 data
+*.backup

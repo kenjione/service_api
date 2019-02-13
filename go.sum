@@ -19,6 +19,10 @@ github.com/kenjione/importer v0.0.0-20190213025719-be59e7280f2f h1:9rd9ufMmgi827
 github.com/kenjione/importer v0.0.0-20190213025719-be59e7280f2f/go.mod h1:vbGINkUcIMk2Yu5DdSYbwSvUBDHomMg0K0ycfDfM/WY=
 github.com/kenjione/importer v0.0.0-20190213101325-4e8983f7d66c h1:e0jvBZCNtxsEgVFdm9wPIElpQLj+NPHqik5aMqyZ27o=
 github.com/kenjione/importer v0.0.0-20190213101325-4e8983f7d66c/go.mod h1:KDyXUeBTnzWFuQ/bHf6wmeHQ0q2Ud1c+R2erDgpSntk=
+github.com/kenjione/importer v0.0.0-20190213152752-ae267be300e1 h1:7WwC3BzmHjH1h/pWkuTm7y/NLiselO+oc5KdnW42+q8=
+github.com/kenjione/importer v0.0.0-20190213152752-ae267be300e1/go.mod h1:KDyXUeBTnzWFuQ/bHf6wmeHQ0q2Ud1c+R2erDgpSntk=
+github.com/kenjione/importer v0.0.0-20190213152941-a3bda13b41b0 h1:h75MUGslE+IV7vfTn9dBcbeYHHdgiVam51zGBQr5tCc=
+github.com/kenjione/importer v0.0.0-20190213152941-a3bda13b41b0/go.mod h1:KDyXUeBTnzWFuQ/bHf6wmeHQ0q2Ud1c+R2erDgpSntk=
 github.com/mattn/go-isatty v0.0.4 h1:bnP0vzxcAdeI1zdubAl5PjU6zsERjGZb7raWodagDYs=
 github.com/mattn/go-isatty v0.0.4/go.mod h1:M+lRXTBqGeGNdLjl/ufCoiOlB5xdOkqRJdNxMWT7Zi4=
 github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd h1:TRLaZ9cD/w8PVh93nsPXa1VrQ6jlwL5oN8l14QlcNfg=
@@ -39,6 +43,7 @@ golang.org/x/crypto v0.0.0-20190211182817-74369b46fc67 h1:ng3VDlRp5/DHpSWl02R4rM
 golang.org/x/crypto v0.0.0-20190211182817-74369b46fc67/go.mod h1:6SG95UA2DQfeDnfUPMdvaQW0Q7yPrPDi9nlGo2tz2b4=
 golang.org/x/sys v0.0.0-20190209173611-3b5209105503 h1:5SvYFrOM3W8Mexn9/oA44Ji7vhXAZQ9hiP+1Q/DMrWg=
 golang.org/x/sys v0.0.0-20190209173611-3b5209105503/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
+golang.org/x/sys v0.0.0-20190213121743-983097b1a8a3/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/go-playground/validator.v8 v8.18.2 h1:lFB4DoMU6B626w8ny76MV7VX6W2VHct2GVOI3xgiMrQ=
