@@ -26,7 +26,7 @@ var serverCmd = &cobra.Command{
 		srv := MakeServer(cnf)
 
 		defer srv.Importer.Close()
-		srv.App.Run(cnf.ServerPort)
+		srv.App.Run()
 	},
 }
 
