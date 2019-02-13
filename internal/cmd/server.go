@@ -49,7 +49,7 @@ func MakeServer(cnf *config.ServerConfig) *app.LocationServer {
 	server := &app.LocationServer{}
 	ginApp := gin.Default()
 
-	ginApp.GET("/location", server.LocationHandler)
+	ginApp.GET("/locations/:ip", server.LocationHandler)
 
 	server.App = ginApp
 	server.Importer = importerService
