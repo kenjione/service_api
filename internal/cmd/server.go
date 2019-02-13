@@ -18,7 +18,7 @@ var serverCmd = &cobra.Command{
 	Short: "Starts BE server",
 	Run: func(cmd *cobra.Command, args []string) {
 		cnf := &config.ServerConfig{
-			ServerPort:       ":3000",
+			ServerPort:       ":" + os.Getenv("PORT"),
 			DatabaseName:     os.Getenv("DATABASE"),
 			DatabaseUser:     os.Getenv("USER"),
 			DatabasePassword: os.Getenv("PASSWORD"),
@@ -26,7 +26,7 @@ var serverCmd = &cobra.Command{
 		srv := MakeServer(cnf)
 
 		defer srv.Importer.Close()
-		srv.App.Run()
+		srv.App.Run(cnf.ServerPort)
 	},
 }
 
