@@ -11,8 +11,13 @@ func (s *LocationServer) LocationHandler(c *gin.Context) {
 	ipAddress := c.Query("ip_address")
 	lbytes, err := s.Importer.FindByIP(ipAddress)
 
-	if err != nil && err.Error() == "pg: no rows in result set" {
-		c.JSON(404, gin.H{"response": "Location not found"})
+	if err != nil {
+		if err.Error() == "pg: no rows in result set" {
+			c.JSON(404, gin.H{"response": "Location not found"})
+			return
+		}
+
+		c.JSON(500, gin.H{"response": err.Error()})
 		return
 	}
 

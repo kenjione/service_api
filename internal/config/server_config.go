@@ -7,9 +7,10 @@ import (
 
 type ServerConfig struct {
 	ServerPort       string
-	DatabaseHost     string
+	DatabaseName     string
 	DatabaseUser     string
 	DatabasePassword string
+	DatabaseAddr     string
 }
 
 func MakeServerConfigFromFile(jsonFile string) (*ServerConfig, error) {

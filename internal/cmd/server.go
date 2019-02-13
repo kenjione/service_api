@@ -34,9 +34,10 @@ func Execute() {
 
 func MakeServer(cnf *config.ServerConfig) *app.LocationServer {
 	importerService := importer.NewImporter(&importer.Config{
-		DatabaseHost:     cnf.DatabaseHost,
+		DatabaseName:     cnf.DatabaseName,
 		DatabaseUser:     cnf.DatabaseUser,
 		DatabasePassword: cnf.DatabasePassword,
+		DatabaseAddr:     cnf.DatabaseAddr,
 	})
 
 	server := &app.LocationServer{}
