@@ -19,9 +19,10 @@ var serverCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		cnf := &config.ServerConfig{
 			ServerPort:       ":" + os.Getenv("PORT"),
-			DatabaseName:     os.Getenv("DATABASE"),
-			DatabaseUser:     os.Getenv("USER"),
-			DatabasePassword: os.Getenv("PASSWORD"),
+			DatabaseName:     os.Getenv("DB_NAME"),
+			DatabaseUser:     os.Getenv("DB_USER"),
+			DatabasePassword: os.Getenv("DB_PASSWORD"),
+			DatabaseAddr:     os.Getenv("DB_ADDR"),
 		}
 		srv := MakeServer(cnf)
 
